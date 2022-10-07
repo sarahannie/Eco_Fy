@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+## About
+This web application was designed for Ecofly - travel agency .
+ ![home page](./homepage.PNG)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+The frontend was built with ReactJs a javacsript library for building user interfaces , and was styled with CSS- Cascading SytleSheet .
 
-## Available Scripts
+The component (in the src folder) folder contains all the components that forms the application . Files with the extention jsx are the reactjs files while the corresponding files with the extension .module.css are the stylesheets. The files are named according to their functions, the Home.jsx file applies to the home page, services.jsx file applies to the services page, login.jsx file applies to the login page and so on . the router.jsx file is in charge of the routing from one point to another in the application.
 
-In the project directory, you can run:
+The images folder contains all the images used in the application
 
-### `npm start`
+The other files in the src folder were automatically created by the create-react-app package, each with it's own function 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The package-lock.json and package.json contains the apllication dependencies and important informations.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The gitignore file contains files and folders tat should be ignored when an attempt is made to push the project to github.
 
-### `npm test`
+The node_modules folder contains all node packages installed with the command npm install.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The backend was built with nodejs and expres js . It was connected to the frontend using Axios - to fetch and send data to the backend
 
-### `npm run build`
+The auth.js file deals with user authentication using jwt- jsonwebtoken
+The routes.js file deals with the routing and requests made from the frontend
+The User.js file conrains the user schema - which provides a layout for the type of  user information that can be stored in the database
+The database used was MONGODB 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Pages
+### HomePage
+The home page is contained in the home.jsx component.
+   __Features__
+   A repeated background video of a plane taking off
+      ![home page](./homepage.PNG)
+   Pictures of top destinations that a user can visit and explore
+      ![top destinations](./top-dest.PNG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ ### Services Page
+The services.jsx file contains the services page
+![services page](./services.PNG)
+__Features__
+List of the services rendered by ECOFLY - when clicked , each leads to another page showing more information about the clicked service
+The services page dropdown menu has 3 options , each linking to a react component and a page
+- ***Flight***
+![flight page](./flight.PNG)
+- ***Hotels***
+![hotels page](./hotels.PNG)
+- ***Visa***
+   ![visa page](./visa.PNG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tour Page
+![Tour page](./tour.PNG)
+__Features__
+An image slider (made with react-grid-carousel) which show popular destinations.
+A second image slider which suggests top destinations that can be travelled to.
 
-### `npm run eject`
+The tour page dropdown menu has 4 options , each linking to a react component and a page
+- ***Popular Destinations***
+   ![Tour page](./tour.PNG)
+- ***Cities***
+   ![Tour page](./tour.PNG)
+- ***Offers***
+   ![Packages page](./packages.PNG)
+- ***Packages***
+   ![Packages page](./packages.PNG)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Packages Page
+__Features__
+![packages page](./packages.PNG)
+A link to hotel packages
+A list of the available luxury trip packages
+The packages page dropdown menu has 6 options , each linking to a react component and a page
+- ***Private Tours***
+   ![Trip page](./trips.PNG)
+- ***Family Vacation***
+   ![Trip page](./trips.PNG)
+- ***Baecation***
+   ![Trip page](./trips.PNG)
+- ***Weekend Trips***
+   ![Trip page](./trips.PNG)
+- ***Excursion***
+   ![Trip page](./trips.PNG)
+- ***Hotels***
+   ![Hotel page](./hotels.PNG)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Flight Page
+![flight page](./flight.PNG)
+__Features__
+   Flights can be booked with form providing location autocomplete aid
+### Visa page
+![visa page](./visa.PNG)
+__Features__
+Shows a list of available visa and provides a platform to apply
+### Login and register Page
+![login page](./login.PNG) 
+![register page](./register.PNG)
+__Features__
+   Login and register page allows existing users to login and new users to create an account
+   Unless they are authenticated i.e logged in , user wont be able to access their account.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 
+## Peaks
+The application was designed with the users in mind . It is easy to understand and walkthrough.
+It suggests places users can travel to based on their location, Users can explore hundreds of hotel packages, can also apply for their visa.
+It is also secure,ensuring users can't get access to their profile unless they are logged in
+Hotel , Car and Flight reservations can be made , The application also has a feature that provides autocomplete  when a user tries to enter a location thus making reservation easier.

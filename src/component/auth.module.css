@@ -1,0 +1,51 @@
+.formcontainer{
+    width: 50%;
+    margin: 2.5em auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form label{
+    font-size: 1em;
+    color: rgb(96,6,6);
+}
+.form input[type=password], .form input[type=email]{
+    width: 80%;
+    padding: 1em;
+    margin: 0.5em 0;
+    font-size: 1em;
+    color: rgb(96,6,6);
+    border: 1px solid rgb(96,6,76);
+    outline: none;
+    border-radius: 2px;
+}
+.form button{
+    width: 20%;
+    padding: 1em;
+    margin: 0.5em 0;
+    font-size: 1em;
+    background: rgb(96,6,6);
+    color: #ccc;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10x;
+    transition: 0.5 ease;
+}
+.form button:hover{
+    box-shadow: 2px 2px 1px 3px rgb(96,6,6);
+}
+.formcontainer a{
+    color: rgb(96,6,6);
+}
+@media(max-width:900px){
+    .formcontainer{
+        width: 85%;
+        margin-top:2em;
+       }
+    .form button{
+        width: 50%;
+    }
+}

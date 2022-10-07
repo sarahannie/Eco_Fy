@@ -1,0 +1,40 @@
+.formcontainer{
+ width: 70%;
+ margin: auto;
+}
+.form{
+    width: 100%;
+}
+
+input[type=text],input[type=email]{
+    width: 80%;
+    padding: 1em;
+    margin: 0.5em 0;
+    font-size: 1em;
+    color: rgb(96,6,6);
+    border: 1px solid rgb(76,76,76);
+    outline: none;
+    border-radius: 10x;
+}
+input[type=submit]{
+    width: 20%;
+    padding: 1em;
+    margin: 0.5em 0;
+    font-size: 1em;
+    background: rgb(96,6,6);
+    color: #ccc;
+    border: none;
+    outline: none;
+    border-radius: 10x;
+}
+
+textarea{
+    width: 83%;
+    font-size: 1em;
+    font-family: 'poppins' ,sans-serif;
+    outline: none;
+}
+
+.formcontainer h1{
+    margin: 0.5em 0;
+}

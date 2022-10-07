@@ -1,0 +1,14 @@
+.heading{
+    color: rgb(96,6,6);
+    width: 90%;
+    margin: auto;
+}
+.dest{
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(96,6,6);
+}
+.dest h1, p{
+    margin: 0;
+    padding: 0;
+}

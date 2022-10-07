@@ -1,0 +1,157 @@
+
+.home{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    align-items: center;
+}
+.planeVideo{
+    position: relative;
+    top: 15%;
+    right: 0;
+    bottom: 15%;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+  }
+
+.content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 35%;
+    
+}
+.content h1{
+    font-size: 3em;
+    margin: 0 auto;
+
+    color: rgb(96, 6, 6);
+}
+.content p{
+    font-size: 2em;
+    margin: 0 auto;
+    color: rgb(96, 6, 6);
+}
+.btn{
+    background: white;
+    padding: 1.5em;
+    width: 35%;
+    margin: 3em 0;
+    border: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: rgb(96, 6, 6);
+    
+}
+
+.btn:hover{
+    background: transparent;
+    border: 1px solid rgb(96, 6, 6);
+    width: 45%;
+}
+/* destinations */
+/* .destination{
+    height: 20vh;
+} */
+.destination h1{
+    color: rgb(96,6,6);
+    margin: 1em 2em;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+.griditem{
+    padding: 1em;
+    border: none;
+    border-radius: 12px;
+    height: 40vh;
+}
+.griditem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    opacity: 0.8;
+    transition: 1s ease;
+}
+.griditem p{
+    position: absolute;
+    bottom: -50%;
+    margin: 1em;
+    color: white;
+    font-size: 1.5em;
+}
+.griditem img:hover{
+    opacity: 1;
+    width: 110%;
+}
+@media(max-width:900px){
+    .content{
+        position: absolute;
+        text-align: center;
+        top: 21%;  
+        left: 0;
+        right: 0;     
+    }
+    .content h1{
+            font-size: 1.5em;
+            margin: 0 ,auto;
+    }
+    .content p{
+        font-size: 1em;
+        margin: 0,auto;
+    }
+    .btn{
+        margin-top: 1em;
+        background: transparent;
+        border: 1px solid rgb(96,6,6);
+        padding: 1em;
+        width: 50%;
+    }
+    .destination h1{
+        color: rgb(96,6,6);
+        margin: 1.5em 2em 0 2em;
+    }
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        gap: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .griditem img{
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        opacity: 0.8;
+        transition: 1s ease;
+    }
+    .griditem{
+        padding: 0.5em;
+        border: none;
+        border-radius: 12px;
+        height: 15vh;
+    }
+    .griditem p{
+        position: absolute;
+        bottom: 23%;
+        display: none;
+        margin: 1em;
+        color: white;
+        font-size: 1.5em;
+    }
+}

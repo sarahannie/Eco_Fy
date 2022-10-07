@@ -1,0 +1,15 @@
+.searchbox{
+    width: 50%;
+    margin: -2em 8em 3em 8em;
+    border: 1px solid rgb(76,76,76);
+    background: transparent;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+.searchbox input[type=text]{
+    border: none;
+    outline: none;
+    width: 100%;
+}

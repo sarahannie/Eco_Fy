@@ -1,0 +1,96 @@
+.visas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em ;
+    width: 80%;
+    margin: auto;
+}
+h1{
+    width: 80%;
+    margin: 2em auto 1em auto;
+    color: rgb(96,6,6);
+}
+
+.visa{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(96,6,6);
+}
+.visa img{
+    width: 20%;
+    height: 10vh;
+    border-radius: 50%;
+}
+.visa div{
+    padding: 1em;
+}
+.visa div h1{
+    font-size: 1.9em;
+    margin: 0;
+    padding: 0;
+}
+.visa div p{
+    font-size: 1.1em;
+}
+.visa button{
+    background: transparent;
+    border: 1px solid rgb(96,6,6);
+    color: rgb(96,66,6);
+    border-radius: 12px;
+    width: 50%;
+    margin: 1em;
+    font-size: 1em;
+    padding: 0.3em;
+    transition: 0.5s ease-in-out;
+    text-transform: uppercase;
+}
+.visa button:hover{
+    width: 70%;
+    background: rgb(96,66,6);
+    color: white;
+}
+.visa button a {
+    text-decoration: none;
+    color: rgb(96,6,6);
+}
+.contactus{
+    width: 80%;
+    margin: auto;
+}
+.contactus h1{
+    font-size: 1.5em;
+    color: rgb(96,6,6);
+    
+    margin: 0;
+    padding: 0;
+}
+.contactus button{
+    background: rgb(81, 55, 3);
+    padding: 1em;
+    border: none;
+    width: 20%;
+}
+.contactus button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.contactus button:hover{
+    box-shadow: 0.5px 1px 1px 2px rgb(81,6,6);
+}
+
+@media(max-width:900px){
+    .visas{
+        grid-template-columns: auto auto;
+        width: 100%;
+        gap: 0.5em;
+    }
+    .contactus button{
+        width: 50%;
+    }
+    .visa button{
+        width: 80%;
+        margin: 0.5em 0;
+    }
+}

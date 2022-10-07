@@ -1,0 +1,160 @@
+@import "~@geoapify/geocoder-autocomplete/styles/minimal.css";
+
+.flexcontainer{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.flexcontainer select{
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.2em;
+    padding: 2em;
+}
+.flexcontainer div select option{
+    padding: 3em;
+    color: rgb(96,6,6);
+    font-size: 1.2em;
+    background:rgb(236, 234, 234);
+}
+.traveller{
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.2em;
+    padding: 2em;
+    position: relative;
+    display: inline-block;
+}
+.container{
+    z-index: 99;
+    position: absolute;
+    width: 30%;
+    color: rgb(96,6,6);
+    background: rgb(236, 234, 234);
+    margin: 0;
+    
+}
+.container ul li{
+    list-style: none;
+    display: flex;
+    height: 7vh;
+    justify-content: space-between;
+}
+.container ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 0.2em;
+}
+.container button{
+    border: none;
+    color: rgb(96,6,6);
+    font-size: 1em;
+    margin: 0 0.2em;
+}
+.container li span{
+    color: rgb(160, 92, 10);
+    font-size: 0.8em;
+}
+.autocompletecontainer {
+    position: relative;
+    
+}
+
+/* flex2 */
+.flexcontainer2{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+.flexcontainer2 input[type=text]{
+    flex-basis: 40%;
+    padding: 1.5em;
+    margin: 0 1em;
+    font-size: 1em;
+}
+
+.flexcontainer2 input[type=date]{
+    flex-basis: 40%;
+    padding: 2em;
+    font-size: 1em;
+    margin: 0;
+    outline: none;
+
+}
+
+.from{
+    border-right: none;
+}
+.to{
+    border-left: none;
+}
+
+@media(max-width:900px){
+    .flexcontainer{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 10%;
+    }
+    .flexcontainer2{
+        flex-direction: column;
+        width: 100%;
+    }
+    .flexcontainer2 input[type=text], .flexcontainer2 input[type=text]{
+        margin: 1em;
+        width: 50%;
+    }
+    .from{
+        border-right: none;
+        border-left: none;
+    }
+    .to{
+        border-left: none;
+        border-right: none;
+    }
+    .flexcontainer2 .date{
+        margin: 1em;
+        width: 80%;
+    }
+    .flexcontainer select{
+        border: none;
+        background: transparent;
+        outline: none;
+        font-size: 1em;
+        padding: 0;
+    }
+    .traveller{
+        border: none;
+        background: transparent;
+        outline: none;
+        font-size: 1em;
+        padding: 0;
+        margin: 0 1em;
+        position: relative;
+        display: inline-block;
+    }
+    .container{
+        width: 65%;
+        padding: 0;
+    }
+    .container ul li{
+        height: 5vh;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
