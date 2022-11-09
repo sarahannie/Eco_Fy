@@ -2,8 +2,6 @@ import React from 'react'
 import Axios from 'axios';
 import { useState } from 'react';
 import style from './auth.module.css'
-import Cookies from "universal-cookie";
-import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -12,12 +10,8 @@ function Register() {
    const [lnameReg, setlnameReg] = useState("");
    const [emailReg, setemailReg] = useState("");
    const [passwordReg, setpasswordReg] = useState ("");
-   const [registered, setRegister] = useState(false)
-   const [errormsg, setError] = useState('')
-   const [message, setMessage] = useState(" ")
-  //  const cookies = new Cookies();
    
-   const navigate = useNavigate();
+   
    const register = async (e) => {
       e.preventDefault();
       await Axios.post("http://localhost:3000/api/register", {
@@ -26,8 +20,8 @@ function Register() {
           email: emailReg,
           password: passwordReg,
          },{withCredentials:true}).then((response) => {
-            setRegister(true)
-            setMessage(response.data)
+            // setRegister(true)
+            
             // cookies.set("TOKEN", response.data.token, {
             //    path: "/",
             //  });
@@ -46,7 +40,7 @@ function Register() {
             if (error.response) {
                // The request was made and the server responded with a status code
                // that falls out of the range of 2xx
-               setError(error.response)
+
                console.log(error.response.data);
                toast.error(`${error.response.data}`, {
                 position: toast.POSITION.TOP_RIGHT

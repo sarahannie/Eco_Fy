@@ -1,20 +1,18 @@
-import React , {useState} from 'react'
+import React , {useState,useEffect} from 'react'
 import package1 from './images/package(1).jpg'
 import package2 from './images/package (2).jpg'
 import package3 from './images/package (3).jpg'
 
 import package4 from './images/package (4).jpg'
-import package5 from './images/package (5).jpg'
 import package6 from './images/package (6).jpg'
-import package7 from './images/package (7).jpg'
 import package8 from './images/package (8).jpg'
 import package9 from './images/package (9).jpg'
 import package10 from './images/package (10).jpg'
 
-import {FaStar,FaSearch} from 'react-icons/fa' 
-import {ImLocation} from 'react-icons/im'
+import {FaStar} from 'react-icons/fa' 
+
 import Hotel from './hotel'
-import style from './search.module.css'
+
 
 function Hotels() {
     const hotels= [
@@ -51,15 +49,7 @@ function Hotels() {
         />  
     ]
     const [filteredHotels, setFilteredHotels] = new useState(hotels);
-    const filterBySearch = (event) => {
-        const query = event.target.value;
-        var updatedList = [...hotels]
-        updatedList = updatedList.filter((item) => {
-            // if (item.name == query)
-           // return item
-        })
-        setFilteredHotels(updatedList);
-      };
+    useEffect(()=> setFilteredHotels(hotels))
   return (
     <div>
           <h1>Explore undred of hotel packages at once</h1>

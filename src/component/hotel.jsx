@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import {FaRegHospital, FaStar} from 'react-icons/fa'
+
 import {ImLocation} from 'react-icons/im'
 import style from './packages.module.css'
 

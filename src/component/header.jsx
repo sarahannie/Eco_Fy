@@ -2,9 +2,7 @@ import style from './header.module.css'
 import AppRouter from './router'
 import React, {useState,useEffect} from 'react'
 import { FaBars , FaTimes, FaUser } from 'react-icons/fa';
-import HomePage from './home';
-import { HashLink } from 'react-router-hash-link';
-import {HashLink as Link} from 'react-router-hash-link'
+
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -21,10 +19,10 @@ function Header() {
         window.addEventListener('resize', changeWidth)
     
       }, [])
-      const handleLogout = ()=>{
-        localStorage.removeItem("token")
-        window.location.reload()
-      }
+      // const handleLogout = ()=>{
+      //   localStorage.removeItem("token")
+      //   window.location.reload()
+      // }
   return (
     <div>
      <div className="header">
@@ -95,19 +93,19 @@ function Header() {
       </div>
           </div>
           <div >
-            <a href="">Contact us</a>
-            <a href="">Blog</a>
-            <a href="">FAQ</a>
-            <a href="">Reviews</a>
-            <a href="">Affiliates</a>
+            <a href="/contact-us">Contact us</a>
+            <a href="/">Blog</a>
+            <a href="/">FAQ</a>
+            <a href="/">Reviews</a>
+            <a href="/">Affiliates</a>
           </div>
           <div>
     
-          <a href="">Learn how ecofly works</a>
-          <a href="">Terms and condition</a>
-          <a href="">Legal information</a>
-          <a href="">Privacy</a>
-          <a href="">Coronavirus (COVID-19) travel advice</a>
+          <a href="/">Learn how ecofly works</a>
+          <a href="/">Terms and condition</a>
+          <a href="/">Legal information</a>
+          <a href="/">Privacy</a>
+          <a href="/">Coronavirus (COVID-19) travel advice</a>
           </div>
           <div className={style.address}>
             1st Floor Bami's Place, Abuja.

@@ -1,7 +1,5 @@
 import React from 'react'
 import style from './bookings.module.css'
-import axios from 'axios'
-import { useState } from 'react'
 import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete'
 import '@geoapify/geocoder-autocomplete/styles/minimal.css'
 

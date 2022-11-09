@@ -1,5 +1,4 @@
 import React from 'react'
-import Booking from './Booking'
 import style from './services.module.css'
 import visa from './images/visa.jpg'
 import car from './images/carr.jpg'

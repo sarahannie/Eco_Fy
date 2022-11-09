@@ -1,12 +1,11 @@
 import React from 'react';
 import plane from './plane.mp4'
 import style from './home.module.css'
-import { FaArrow} from 'react-icons/fa';
 import paris from './images/paris.jpg'
 import dubai from './images/dubai.jpg'
 import seoul from './images/seoul.jpg'
 import italy from './images/italy.jpg'
-import { Slide } from 'react-slideshow-image';
+
 
 
 const HomePage = ()=>{

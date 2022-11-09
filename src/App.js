@@ -1,10 +1,5 @@
 
-import HomePage from './component/home';
 import Header from './component/header';
-import Contact from './component/Contact';
-import Register from './component/Register';
-import Login from './component/Login';
-import AuthRouter from './component/AuthRout';
 import ReactGA from "react-ga";
 import {useEffect} from 'react'
 

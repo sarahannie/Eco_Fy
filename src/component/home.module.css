@@ -79,6 +79,7 @@
     border: none;
     border-radius: 12px;
     height: 40vh;
+    position: relative;
 }
 .griditem img{
     width: 100%;
@@ -89,7 +90,7 @@
 }
 .griditem p{
     position: absolute;
-    bottom: -50%;
+    bottom: 0;
     margin: 1em;
     color: white;
     font-size: 1.5em;
@@ -132,6 +133,7 @@
         gap: 10px;
         width: 90%;
         margin: 0 auto;
+        
     }
     .griditem img{
         width: 100%;
@@ -143,12 +145,13 @@
     .griditem{
         padding: 0.5em;
         border: none;
+        position: relative;
         border-radius: 12px;
         height: 15vh;
     }
     .griditem p{
         position: absolute;
-        bottom: 23%;
+        bottom: 0;
         display: none;
         margin: 1em;
         color: white;

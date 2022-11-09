@@ -1,8 +1,6 @@
 import React ,{Component} from 'react'
-import { useState } from 'react'
-import {FaMinusSquare, FaPlusSquare,GiCommercialAirplane} from 'react-icons/fa'
+import {FaMinusSquare, FaPlusSquare} from 'react-icons/fa'
 import style from './bookings.module.css'
-import axios from 'axios'
 import Location from './location'
 
 

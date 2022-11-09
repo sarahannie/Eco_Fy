@@ -2,12 +2,11 @@ import React,{useEffect} from 'react'
 import Axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { useCookies } from 'react-cookie'
-import style from './auth.module.css'
 
 function Profiles() {
     
   const navigate = useNavigate()
-  const [cookies,setCookie,removeCookie] = useCookies([])
+  const [cookies,removeCookie] = useCookies([])
   useEffect(() => {
     const verifyUser = async () => {
       if(!cookies.jwt) {

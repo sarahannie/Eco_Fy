@@ -6,7 +6,7 @@ function Tour() {
   return (
     <div>
       <div>
-      <marquee className={style.heading}>Let'us take you around the world</marquee>
+      {/* <marquee className={style.heading}>Let'us take you around the world</marquee> */}
       </div>
       <ImageSlider />
       <div>
