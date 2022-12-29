@@ -1,3 +1,13 @@
+## Title 
+Eco-fly
+
+## Technology used for build
+React.js
+Node.js
+MongoDB
+Css
+Express.js
+Cors.js
 ## About
 This web application was designed for Ecofly - travel agency .
  ![home page](./homepage.PNG)

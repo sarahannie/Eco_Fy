@@ -116,9 +116,9 @@ function Header() {
           </div>
       </div>
       <div className={style.copyright}>
-      <span >  Copyright 2022 ecofly | All rights reserved.</span>
+      <span >  &#169;Copyright 2022 ecofly | All rights reserved.</span>
       <br />
-      <span>Made with love by MaryAyobami.</span>
+      <span>Made with love by SarahAnnie.</span>
       </div>
     
     </div>
